@@ -1,6 +1,6 @@
 #  PROGRAMACION ORIENTADA A OBJETOS
 
-![PROGRAMACION ORIENTADA A OBJETOS](https://raw.githubusercontent.com/gcoronelc/UCV_GDI-2_202202-B1/master/img/curso.png)
+![PROGRAMACION ORIENTADA A OBJETOS](https://raw.githubusercontent.com/gcoronelc/UCV_POO_202301-A2/master/img/curso.png)
 
 
 ## DATOS DEL CURSO
