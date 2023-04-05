@@ -10,6 +10,8 @@
 - Inicio: 03-ABRIL-2023
 - Teoría: 7:30 a 10:00 Horas
 - Laboratorio: 10:20 a 12:00 Horas
+- Delegado: Jorge Alexis Tapia Limo
+- Subdelegado: Joaquin Marcelo Calderón Salazar
 
 
 ## DOCENTE
