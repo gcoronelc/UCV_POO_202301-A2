@@ -1,5 +1,8 @@
 package pe.edu.ucv.appbanco.service;
 
+import java.util.List;
+import pe.edu.ucv.appbanco.model.Item;
+
 /**
  * @author Eric Gustavo Coronel Castillo
  * @email gcoronelc@gmail.com
@@ -11,9 +14,18 @@ package pe.edu.ucv.appbanco.service;
 public class BancoService {
 
 	public double obtenerImporte(double capitalInicial, double interesMes, int n) {
+		// Variables
 		double importe;
+		// Proceso
 		importe = capitalInicial * Math.pow(1 + interesMes, n);
+		Item item = new Item(capitalInicial, interesMes, n, importe);
+		Database.datos.add(item);
+		// Reporte
 		return importe;
+	}
+	
+	public List<Item> obtenerListado(){
+		return Database.datos;
 	}
 
 }
