@@ -1,5 +1,7 @@
 package pe.edu.ucv.appbanco;
 
+import pe.edu.ucv.appbanco.view.BancoView;
+
 /**
  * @author Eric Gustavo Coronel Castillo
  * @email gcoronelc@gmail.com
@@ -10,11 +12,8 @@ package pe.edu.ucv.appbanco;
  */
 public class AppBanco {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        BancoView.main(args);
     }
 
 }

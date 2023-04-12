@@ -10,4 +10,10 @@ package pe.edu.ucv.appbanco.service;
  */
 public class BancoService {
 
+	public double obtenerImporte(double capitalInicial, double interesMes, int n) {
+		double importe;
+		importe = capitalInicial * Math.pow(1 + interesMes, n);
+		return importe;
+	}
+
 }
