@@ -1,5 +1,7 @@
 package pe.edu.ucv.sistventas;
 
+import pe.edu.ucv.sistventas.view.MainView;
+
 /**
  * @author Eric Gustavo Coronel Castillo
  * @email gcoronelc@gmail.com
@@ -14,7 +16,7 @@ public class SistVentas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        MainView.main(args);
     }
 
 }
