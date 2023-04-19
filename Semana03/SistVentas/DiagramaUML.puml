@@ -1,0 +1,4 @@
+@startuml
+class pe.edu.ucv.sistventas.model.VentaItem
+class pe.edu.ucv.sistventas.model.Ventas
+@enduml
