@@ -57,4 +57,15 @@ public class VentaItem {
 		this.importe = importe;
 	}
 
+	@Override
+	public String toString() {
+		String repo = "[producto: " + producto;
+		repo += ", precio: " + precio ;
+		repo += ", cantidad: " + cantidad;
+		repo += ", importe: " + importe + "]";
+		return repo;
+	}
+	
+	
+
 }

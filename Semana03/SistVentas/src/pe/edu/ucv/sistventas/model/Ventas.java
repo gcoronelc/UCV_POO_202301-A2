@@ -18,7 +18,9 @@ public class Ventas {
 	private List<VentaItem> lista;
 
 	public Ventas() {
-		lista = new ArrayList<>();
+		this.lista = new ArrayList<>();
+		this.cantidadTotal = 0;
+		this.importeTotal = 0.0;
 	}
 
 	public int getCantidadTotal() {
