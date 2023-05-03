@@ -10,6 +10,33 @@ package aprendiendoherencia.service;
  */
 public class Clase1 {
 	
+	public final String EL_MEJOR = "REAL MADRID";
+
+	/**
+	 * Constructor por defecto.
+	 */
+	public Clase1() {
+		System.out.println("Hola desde Clase1.");
+	}
+	
+	/**
+	 * Constructor adicional.
+	 * @param nombre Nombre de la persona.
+	 */
+	public Clase1(String nombre) {
+		System.out.println("Hola " + nombre + " te saluda Clase1.");
+	}
+	
+	private String descripcion;
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	
 	static void mostrarMensaje(String mensaje){
 		System.out.println(mensaje);
 	}

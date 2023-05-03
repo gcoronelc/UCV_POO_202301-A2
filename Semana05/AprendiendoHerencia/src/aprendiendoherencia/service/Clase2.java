@@ -9,10 +9,25 @@ package aprendiendoherencia.service;
  * @facebook https://www.facebook.com/groups/desarrollasoftware/
  */
 public class Clase2 extends Clase1 {
+	
+	public Clase2() {
+		super("Gustavo Coronel");
+		// EL_MEJOR = "ALIANZA LIMA"; // No es posible
+	}
+	
+	private double precio;
 
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	
 	@Override
 	public int sumar(int n1, int n2) {
-		int suma = (n1 + n2) * (n1 - n2);
+		int suma = super.sumar(n1, n2) * (n1 - n2);
 		return suma;
 	}
 
