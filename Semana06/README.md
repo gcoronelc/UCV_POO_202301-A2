@@ -1,5 +1,7 @@
-# VIDEOS DE LA CLASE 1
+# SEMANA 6: Aplicación de Relaciones entre clases y principios básicos
 
-Para poder visualizar el video debes iniciar sesión con tu cuenta de la UNI.
+## Actividad de Inicio
 
-[![Clase](https://raw.githubusercontent.com/gcoronelc/CTIC-CIENCIA-DE-DATOS-MOD-02-2022/main/img/youtube.png)](https://youtu.be/C19EwKrLPNs)
+- Tipos de relaciones entre clases
+
+[![Tipos de Relaciones entre clases](https://raw.githubusercontent.com/gcoronelc/UCV_POO_202301-A2/main/Semana06/img/video1.jpg)](https://youtu.be/zvVzW4LzwTc)
