@@ -1,4 +1,5 @@
-# SEMANA 6: Aplicación de Relaciones entre clases y principios básicos
+# SEMANA 6: 
+# Aplicación de Relaciones entre clases y principios básicos
 
 ## Actividad de Inicio
 
