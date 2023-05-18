@@ -1,4 +1,4 @@
-# SEMANA 7: 
+# SEMANA 7: PATRONES GRASP
 # Aplicación Patrones de Diseño
 
 ## Actividad de Inicio
