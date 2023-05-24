@@ -1,4 +1,4 @@
-# SEMANA 7: PATRONES GRASP - PARTE 2
+# SEMANA 8: PATRONES GRASP - PARTE 2
 - Bajo acoplamiento. 
 - Alta cohesión. 
 - Controlador
