@@ -1,8 +1,7 @@
 # SEMANA 11: DISEÑO DE BASE DE DATOS
-- Sobrecarga de métodos
-- Constructores
-- Constructores por defecto y con parámetros
-- Polimorfismo
+- Diseño de Base de Datos
+- Diseño de Tablas
+- Sentencias SQL
 
 ## Actividad de Inicio
 
