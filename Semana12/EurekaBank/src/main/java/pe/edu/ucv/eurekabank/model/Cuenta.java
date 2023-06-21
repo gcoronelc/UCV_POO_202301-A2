@@ -5,6 +5,7 @@ public class Cuenta {
     private String cuenta;
     private String cliente;
     private String empleado;
+    private String sucursal;
     private String moneda;
     private double saldo;
     private String clave;
@@ -36,10 +37,21 @@ public class Cuenta {
         this.empleado = empleado;
     }
 
+    public String getSucursal() {
+        return sucursal;
+    }
+
+    public void setSucursal(String sucursal) {
+        this.sucursal = sucursal;
+    }
+
+    
+    
     public String getMoneda() {
         return moneda;
     }
 
+    
     public void setMoneda(String moneda) {
         this.moneda = moneda;
     }
