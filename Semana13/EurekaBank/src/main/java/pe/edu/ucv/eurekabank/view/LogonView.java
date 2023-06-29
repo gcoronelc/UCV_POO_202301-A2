@@ -49,7 +49,7 @@ public class LogonView extends javax.swing.JDialog {
       txtUsuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
       jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-      jLabel3.setText("Clase");
+      jLabel3.setText("Clave");
 
       txtClave.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
@@ -75,14 +75,14 @@ public class LogonView extends javax.swing.JDialog {
          .addGroup(jPanel1Layout.createSequentialGroup()
             .addGap(16, 16, 16)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-               .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-               .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+               .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+               .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGap(18, 18, 18)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-               .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+               .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                .addGroup(jPanel1Layout.createSequentialGroup()
                   .addGap(2, 2, 2)
-                  .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                  .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addContainerGap(27, Short.MAX_VALUE))
       );
 

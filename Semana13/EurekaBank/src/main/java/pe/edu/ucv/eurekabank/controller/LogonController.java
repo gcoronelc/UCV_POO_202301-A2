@@ -1,5 +1,8 @@
 package pe.edu.ucv.eurekabank.controller;
 
+import pe.edu.ucv.eurekabank.model.Empleado;
+import pe.edu.ucv.eurekabank.service.LogonService;
+
 /**
  * @author Eric Gustavo Coronel Castillo
  * @email gcoronelc@gmail.com
@@ -11,11 +14,8 @@ package pe.edu.ucv.eurekabank.controller;
 public class LogonController {
 	
 	public void validarUsuario(String usuario, String clave){
-		if(usuario.equals("gustavo") && clave.equals("coronel")){
-			System.out.println("Bien");
-		} else {
-			throw  new RuntimeException("Datos incorrectos!!");
-		}
+		LogonService service = new LogonService();
+		Empleado empleado = service.validarUsuario(usuario, clave);
 	}
 
 }
