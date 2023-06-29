@@ -2,6 +2,7 @@ package pe.edu.ucv.eurekabank.controller;
 
 import pe.edu.ucv.eurekabank.model.Empleado;
 import pe.edu.ucv.eurekabank.service.LogonService;
+import pe.edu.ucv.eurekabank.util.Session;
 
 /**
  * @author Eric Gustavo Coronel Castillo
@@ -16,6 +17,7 @@ public class LogonController {
 	public void validarUsuario(String usuario, String clave){
 		LogonService service = new LogonService();
 		Empleado empleado = service.validarUsuario(usuario, clave);
+		Session.put("usuario",empleado);
 	}
 
 }

@@ -5,6 +5,8 @@
 package pe.edu.ucv.eurekabank.view;
 
 import javax.swing.JInternalFrame;
+import pe.edu.ucv.eurekabank.model.Empleado;
+import pe.edu.ucv.eurekabank.util.Session;
 
 /**
  *
@@ -18,6 +20,7 @@ public class MainView extends javax.swing.JFrame {
 	public MainView() {
 		initComponents();
 		this.setExtendedState(MAXIMIZED_BOTH);
+		establecerTitulo();
 	}
 
 	/**
@@ -167,6 +170,12 @@ public class MainView extends javax.swing.JFrame {
 			view.setSelected(true);
 		} catch (Exception e) {
 		}
+	}
+
+	private void establecerTitulo() {
+		Empleado usuario = (Empleado) Session.get("usuario");
+		String titulo = "EUREKA SYSTEM [Usuario:" + usuario.getUsuario() + "]";
+		this.setTitle(titulo);
 	}
 
 }
