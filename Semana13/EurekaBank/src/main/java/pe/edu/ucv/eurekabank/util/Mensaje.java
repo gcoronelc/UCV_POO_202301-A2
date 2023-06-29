@@ -17,12 +17,12 @@ public class Mensaje {
 	}
 
 	public static void info(Component padre, String mensaje) {
-		JOptionPane.showMessageDialog(padre, mensaje, "SISTEMA DE PASAJES - INFORMACIÓN",
+		JOptionPane.showMessageDialog(padre, mensaje, "EUREKA - INFORMACIÓN",
 				  JOptionPane.INFORMATION_MESSAGE);
 	}
 
 	public static void error(Component padre, String mensaje) {
-		JOptionPane.showMessageDialog(padre, mensaje, "SISTEMA DE PASAJES - ERROR",
+		JOptionPane.showMessageDialog(padre, mensaje, "EUREKA - ERROR",
 				  JOptionPane.ERROR_MESSAGE);
 	}
 

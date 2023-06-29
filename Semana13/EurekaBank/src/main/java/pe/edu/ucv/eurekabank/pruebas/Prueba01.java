@@ -8,9 +8,6 @@ public class Prueba01 {
     
     public static void main(String[] args) {
         
-        String dato = "123456789";
-        System.out.println(dato.substring(dato.length()-3,dato.length()));
-        
         try {
             Connection cn = AccesoDB.getConnection();
             System.out.println("Conexion ok.");
