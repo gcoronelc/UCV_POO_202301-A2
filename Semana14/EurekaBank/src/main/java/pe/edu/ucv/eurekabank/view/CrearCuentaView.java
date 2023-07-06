@@ -83,7 +83,7 @@ public class CrearCuentaView extends javax.swing.JInternalFrame {
             .addComponent(btnProcesar, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGap(19, 19, 19)
             .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap(372, Short.MAX_VALUE))
+            .addContainerGap(438, Short.MAX_VALUE))
       );
       jPanel1Layout.setVerticalGroup(
          jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,7 +100,9 @@ public class CrearCuentaView extends javax.swing.JInternalFrame {
       jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
       jLabel1.setText("Cliente");
 
+      txtCliente.setBackground(java.awt.SystemColor.controlHighlight);
       txtCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+      txtCliente.setBorder(javax.swing.BorderFactory.createEtchedBorder());
       txtCliente.setDisabledTextColor(new java.awt.Color(0, 51, 204));
       txtCliente.setEnabled(false);
       txtCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -129,6 +131,8 @@ public class CrearCuentaView extends javax.swing.JInternalFrame {
          }
       });
 
+      jButton1.setBackground(java.awt.SystemColor.activeCaption);
+      jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
       jButton1.setText("Buscar");
       jButton1.addActionListener(new java.awt.event.ActionListener() {
          public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,14 +152,16 @@ public class CrearCuentaView extends javax.swing.JInternalFrame {
                .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE))
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-               .addComponent(txtImporte, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
-               .addComponent(txtCliente)
-               .addComponent(txtClave)
-               .addComponent(cboMoneda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap(83, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addGroup(jPanel2Layout.createSequentialGroup()
+                  .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
+                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                  .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+               .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
+               .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                  .addComponent(cboMoneda, javax.swing.GroupLayout.Alignment.LEADING, 0, 366, Short.MAX_VALUE)
+                  .addComponent(txtImporte, javax.swing.GroupLayout.Alignment.LEADING)))
+            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
       );
       jPanel2Layout.setVerticalGroup(
          jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,10 +180,10 @@ public class CrearCuentaView extends javax.swing.JInternalFrame {
                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                .addComponent(txtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-               .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-               .addComponent(txtClave))
-            .addGap(62, 62, 62))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+               .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+               .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addContainerGap(61, Short.MAX_VALUE))
       );
 
       javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -242,7 +248,7 @@ public class CrearCuentaView extends javax.swing.JInternalFrame {
 			return;
 		}
 		cliente = (Cliente) Session.get("cliente");
-		txtCliente.setText(cliente.getPaterno() + " " + cliente.getMaterno() + " " + cliente.getNombre());		
+		txtCliente.setText( cliente.getNombre() + ", " + cliente.getPaterno() + " " + cliente.getMaterno() );		
    }//GEN-LAST:event_jButton1ActionPerformed
 
 
