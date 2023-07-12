@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import pe.edu.ucv.eurekabank.db.AccesoDB;
 import pe.edu.ucv.eurekabank.model.Cliente;
-import pe.edu.ucv.eurekabank.model.Combo;
-import pe.edu.ucv.eurekabank.model.Empleado;
 
 public class ConsultaService {
 
@@ -44,7 +42,7 @@ public class ConsultaService {
 				cliente.setCodigo(rs.getString("codigo"));
 				cliente.setPaterno(rs.getString("paterno"));
 				cliente.setMaterno(rs.getString("materno"));
-				cliente.setNombre(rs.getString("codigo"));
+				cliente.setNombre(rs.getString("nombre"));
 				cliente.setDni(rs.getString("dni"));
 				cliente.setCiudad(rs.getString("ciudad"));
 				cliente.setDireccion(rs.getString("direccion"));
